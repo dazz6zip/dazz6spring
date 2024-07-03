@@ -8,10 +8,14 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
        
    	<!-- DI : Constructor injection -->
-    <bean name="ddi" class="model.DataDaoImpl" />
-    <bean name="psi" class="controller.ProcessServiceImpl">
-    	<constructor-arg>
-    		<ref bean="ddi" />
-    	</constructor-arg> 
-    </bean>
+	<bean id="mps" class="pack.controller.MyProcess">
+		<constructor-arg>
+		<!-- 
+			<ref bean="mc"/>
+		 -->
+		 <ref bean="dd"></ref>
+		</constructor-arg>
+	</bean>
+	
+	<bean id="mc" name="cc, dd, jj" class="pack.model.MoneyCalc"></bean>
 </beans>

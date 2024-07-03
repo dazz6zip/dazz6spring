@@ -12,6 +12,6 @@
     <bean name="psi" class="controller.ProcessServiceImpl">
     	<constructor-arg>
     		<ref bean="ddi" />
-    	</constructor-arg>
+    	</constructor-arg> 
     </bean>
 </beans>

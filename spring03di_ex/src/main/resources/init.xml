@@ -8,10 +8,11 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
        
    	<!-- DI : Constructor injection -->
-    <bean name="ddi" class="model.DataDaoImpl" />
-    <bean name="psi" class="controller.ProcessServiceImpl">
-    	<constructor-arg>
-    		<ref bean="ddi" />
-    	</constructor-arg> 
-    </bean>
+	<bean id="mi" class="pack.controller.MyImpl">
+		<constructor-arg>
+			<ref bean="spi"/>
+		</constructor-arg>
+	</bean>
+	
+	<bean id="spi" class="pack.model.SangpumImpl"></bean>
 </beans>
