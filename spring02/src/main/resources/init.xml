@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+모든 설정을 자바 코드로부터 분리하여 외부화함
+또는 어노테이션을 사용하여 자바 코드 내에서 DI 설정 가능
+ -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       
+   	<!-- DI : Constructor injection -->
+    <bean name="ddi" class="model.DataDaoImpl" />
+    <bean name="psi" class="controller.ProcessServiceImpl">
+    	<constructor-arg>
+    		<ref bean="ddi" />
+    	</constructor-arg>
+    </bean>
+</beans>
