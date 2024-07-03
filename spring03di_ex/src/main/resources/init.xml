@@ -15,4 +15,9 @@
 	</bean>
 	
 	<bean id="spi" class="pack.model.SangpumImpl"></bean>
+	<!-- 위 구문의 의미
+	SangpumImpl spi = new SangpumImpl();
+	MyImpl mi = new MyImpl(spi);
+	대신 Spring 에서는 singleton 패턴으로 인스턴스화함
+	 -->
 </beans>

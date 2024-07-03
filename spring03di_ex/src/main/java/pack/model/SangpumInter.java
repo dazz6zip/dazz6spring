@@ -1,5 +1,5 @@
 package pack.model;
 
 public interface SangpumInter {
-	int calcMoney(int st, int pr);
+	String[] calcMoney(String sp, int st, int pr);
 }
