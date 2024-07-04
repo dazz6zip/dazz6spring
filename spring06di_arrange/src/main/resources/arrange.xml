@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- 
+	<bean id="mi" class="pack.controller.MessageImpl" scope="singleton"> 
+	scope 기본값 singleton, 생략 가능 
+	prototype 으로 지정해 줄 수 있음 (이 경우 객체가 매번 만들어짐)
+	
+	constructor-arg에 index 요소 (0부터 1씩 증가) 생략 가능
+	-->
+	<bean id="mi" class="pack.controller.MessageImpl">
+		<!-- construntor injection -->
+		<constructor-arg index="1" type="java.lang.String">
+			<value>안녕하세요</value>
+		</constructor-arg>
+		<constructor-arg index="0" type="String">
+			<value>반갑습니다</value>
+		</constructor-arg>
+		<constructor-arg index="2" type="int" value="24"></constructor-arg>
+		<constructor-arg>
+			<ref bean="mif"></ref>
+		</constructor-arg>
+		
+		<!-- setter injection -->
+		<property name="spec">
+			<value>자바 개발 전문</value>
+		</property>
+		<property name="ofi">
+			<ref bean="ofil"></ref>
+		</property>
+	</bean>	
+	<bean id="mif" class="pack.model.MyInfo"></bean>
+	<bean id="ofil" class="pack.other.OutFileInterImpl">
+		<property name="filePath" value="c:/workSpring/message.txt"></property>
+	</bean>
+</beans>

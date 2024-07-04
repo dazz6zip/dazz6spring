@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- 방법 1 : 일반적인 setter 사용 
+	<bean id="mps" class="pack.MyProcess">
+		<property name="nai" value="25"></property>
+		<property name="name" value="김이름"></property>
+		<property name="sd" ref="sdt"></property>
+	</bean>
+	<bean id="sdt" class="pack.ShowData"></bean>
+	-->
+	
+	<!-- 방법 2 : 일반적인 setter 사용
+	<bean id="mps" class="pack.MyProcess">
+		<property name="nai">
+			<value>26</value>
+		</property>
+		<property name="name">
+			<value>최이름</value>
+		</property>
+		<property name="sd">
+			<bean class="pack.ShowData"></bean>
+		</property>
+	</bean>	
+	 -->
+	 
+	 <!-- 방법 3 : xml namespace 사용 -->
+	 <bean id="mps" class="pack.MyProcess" p:nai="27" p:name="박이름" p:sd-ref="sdt"></bean>
+	 <bean id="sdt" class="pack.ShowData"></bean>
+</beans>
