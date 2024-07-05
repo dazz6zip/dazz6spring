@@ -23,7 +23,7 @@ singleton pattern 으로 sender 객체 생성
 */
 
 @Component
-public class Sender {
+public class Sender implements SenderInter {
 	public void show() {
 		System.out.println("show method from Sender");
 	}
