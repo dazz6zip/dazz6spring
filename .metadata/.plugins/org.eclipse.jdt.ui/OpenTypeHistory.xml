@@ -2,4 +2,7 @@
 <typeInfoHistroy>
     <typeInfo handle="=spring03di/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;pack.model{MoneyInter.java[MoneyInter" modifiers="513" timestamp="1719985627695"/>
     <typeInfo handle="=spring03di/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;pack.controller{MyInter.java[MyInter" modifiers="513" timestamp="1719985982287"/>
+    <typeInfo handle="=spring14DB_JDBC_DaoSupport/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;pack{BusinessInter.java[BusinessInter" modifiers="513" timestamp="1720405085036"/>
+    <typeInfo handle="=spring16DB_JDBC_DaoSupport_AOP/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;pack.model{JikwonInter.java[JikwonInter" modifiers="513" timestamp="1720418550310"/>
+    <typeInfo handle="=spring16DB_JDBC_DaoSupport_AOP/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;pack.business{BusinessInter.java[BusinessInter" modifiers="513" timestamp="1720420706387"/>
 </typeInfoHistroy>

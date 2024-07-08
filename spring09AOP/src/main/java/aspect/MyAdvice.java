@@ -19,9 +19,8 @@ public class MyAdvice implements MethodInterceptor {
 		
 		Object obj = invocation.proceed(); // 선택된 핵심 로직 메소드 중 하나 - sayHi()
 		
-		
 		System.out.println("핵심 로직 수행 후 마무리 처리");	
 		
-		return obj;
+		return obj;	
 	}
 }

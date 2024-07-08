@@ -16,7 +16,6 @@
 	
 	<bean id="atcdao" class="pack.ArticleDao"></bean>
 	
-	
 	<!-- AOP 설정 : Advice - aop namespace 사용 -->
 	<bean id="oadv" class="pack.OurAdvice"></bean>
 	<aop:config>
