@@ -10,7 +10,7 @@ public class LogicImpl implements LogicInter {
 	private ArticleInter atci;
 	
 	public LogicImpl() {
-		// TODO Auto-generated constructor stub
+		
 	}
 	
 //	public LogicImpl(ArticleInter atci) {
