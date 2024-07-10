@@ -5,4 +5,8 @@
     <typeInfo handle="=spring14DB_JDBC_DaoSupport/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;pack{BusinessInter.java[BusinessInter" modifiers="513" timestamp="1720405085036"/>
     <typeInfo handle="=spring16DB_JDBC_DaoSupport_AOP/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;pack.model{JikwonInter.java[JikwonInter" modifiers="513" timestamp="1720418550310"/>
     <typeInfo handle="=spring16DB_JDBC_DaoSupport_AOP/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;pack.business{BusinessInter.java[BusinessInter" modifiers="513" timestamp="1720420706387"/>
+    <typeInfo handle="=spring17DB_mybatis/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;pack.model{SangpumInter.java[SangpumInter" modifiers="513" timestamp="1720490496711"/>
+    <typeInfo handle="=spring17DB_mybatis/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;pack.business{BusinessInter.java[BusinessInter" modifiers="513" timestamp="1720490909715"/>
+    <typeInfo handle="=spring19DB_JPA/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;pack.model{DataInterface.java[DataInterface" modifiers="513" timestamp="1720511110760"/>
+    <typeInfo handle="=spring19DB_JPA/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;pack.business{BusinessInter.java[BusinessInter" modifiers="513" timestamp="1720512245047"/>
 </typeInfoHistroy>

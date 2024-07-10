@@ -1,0 +1,14 @@
+package pack.business;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Main {
+	public static void main(String[] args) {
+		ApplicationContext cxt = new ClassPathXmlApplicationContext("init.xml");
+		BusinessInter bi = (BusinessInter)cxt.getBean("businessImple");
+		
+		bi.dataPrint(); 
+	}
+}
