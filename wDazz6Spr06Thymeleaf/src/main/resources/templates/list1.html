@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<!-- 키워드 붙여 줌으로써 클라이언트가 해석할 수 없게 됨 (서버에서 해석)
+키워드가 없으면 순수 HTML로 templates 폴더에 있을 수 없음 -->
+<!-- Thymeleaf 는 templates 엔진임 -->
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>타임리프 연습장</h2>
+메시지 1 : <span th:text="${msg1}">이 영역의 텍스트는 순수 HTML에만 표시</span><br/>
+메시지 2 : <b th:text="${msg2}">두 번째 메시지</b><br/>
+메시지 2 : <i>[[${msg2}]]</i><br/>
+값 결합 ( + 사용) : <span th:text="'앞 메시지 /' + ${msg2} + ' / 뒤 메시지'">문자열 더하기</span><br/>
+값 결합 (리터럴 치환) : <span th:text="|앞 메시지 / ${msg2} / 뒤 메시지|">| 문자열 | 형태</span><br/>
+지역 변수 처리 : 
+<span th:with="kor=90, eng=80"> <!-- th:with="변수명=값, ..."  -->
+	<span th:text="|${kor} + ${eng} = ${kor + eng}|">변수는 ${} 내에서만 유효</span>
+</span><br/>
+산술연산 : +, =, *, /<br/>
+관계 연산 :
+<span th:text="3 >= 4"></span>&emsp;
+<span th:text="3 < 4"></span>&emsp;
+<span th:text="a >= b"></span>&emsp;
+<span th:text="a < b"></span>&emsp;
+<span th:text="3 == 4"></span>&emsp;
+<span th:text="3 != 4"></span>&emsp;
+<span th:text="a == b"></span>&emsp;
+<span th:text="a != b"></span><hr/>
+조건 연산(if, unless) :
+<span th:text="5 > 4 ? '크다' : '작다'">삼항연산</span><br/>
+조건 연산 (true) :<br/>
+<span th:if="5 > 4">
+	- 조건이 참일 때 수행 (ELSE 없음)
+</span><br/>
+<span th:unless="5 == 4">
+	- 조건이 거짓일 때 수행
+</span><br/>
+조건 연산 (switch) :
+<div th:switch="${msg1}">
+	<b th:case="|타임리프 1|" th:text="|- 메렁 ${msg1}|"></b>
+	<!-- th:case에 띄어쓰기 없으면 | 없이 기재 가능 -->
+	<i th:case="|타임리프 2|" th:text="|- 야호 ${msg2}|"></i>
+	<strong th:case="*">- 그 외 메시지</strong>
+</div>
+상품 객체 출력 (객체명.getter, 객체명['getter']) : <br/>
+<div th:text="${sangpum.code}"></div>
+<div th:text="${sangpum['sang']}"></div>
+<div th:text="${sangpum.price}"></div>
+객체 참조 기법 : <br/>
+<div th:object="${sangpum}">
+	<span th:text="*{code}">자식 요소에서 *{field name (getter)}</span>&emsp;
+	<span th:text="*{sang}"></span>&emsp;
+	[[*{price}]]
+</div>
+<p th:text="${list[0]}"></p>
+<p th:text="${list[1]}"></p>
+반복 처리 : <br/>
+<table border="1">
+	<tr>
+		<th>코드</th><th>품명</th><th>가격</th>
+	</tr>
+	<tr th:each="s:${list}">
+		<td>[[${s.code}]]</td>
+		<td>[[${s.sang}]]</td>
+		<td>[[${s.price}]]</td>
+	</tr>
+</table>
+</body>
+</html>

@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import jakarta.servlet.http.HttpServletRequest;
 
-@Controller
+@Controller // 요청 정보 처리
 public class LoginController {
 	// 로그 정보 출력용 클래스
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
