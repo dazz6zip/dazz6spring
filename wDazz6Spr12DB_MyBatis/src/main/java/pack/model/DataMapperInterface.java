@@ -17,13 +17,11 @@ public interface DataMapperInterface {
 	List<DataDto> selectAll();
 	
 	@Select("SELECT * FROM mem WHERE num = #{num}")
-	List<DataDto> selectPart(String num);
+	DataDto selectPart(String num);
 	
-//	@Insert("INSERT INTO mem VALUES (#{bean.num}, #{bean.name}, #{bean.addr})")
-	@Insert("INSERT INTO mem VALUES (#num}, #{name}, #{addr})")
+	@Insert("INSERT INTO mem VALUES (#{num}, #{name}, #{addr})")
 	int insertData(DataBean bean);
 	
-//	@Update("UPDATE mem SET name = #{bean.name}, addr = #{bean.addr} WHERE num = #{bean.num}")
 	@Update("UPDATE mem SET name = #{name}, addr = #{addr} WHERE num = #{num}")
 	int updateData(DataBean bean);
 	
