@@ -10,8 +10,7 @@ public class MyImpl implements MyInter {
 	// 만약 SangpumImpl 로 멤버 필드를 선언하여 생성자에서 주소를 치환받을 경우, 오직 SangpumImple 만 사용 가능하게 됨
 	private String[] result;
 
-	public MyImpl(SangpumInter cm) {
-		// constructor injection
+	public void setMyImpl(SangpumInter cm) {
 		this.cm = cm;
 	}
 

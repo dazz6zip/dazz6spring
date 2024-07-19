@@ -17,7 +17,7 @@
 		<item key="org.eclipse.jdt.ui.typecomment.deprecated" value="true"/>
 	</section>
 	<section name="NewClassCreationWizard.dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="697"/>
+		<item key="DIALOG_X_ORIGIN" value="424"/>
 		<item key="DIALOG_Y_ORIGIN" value="138"/>
 		<item key="DIALOG_WIDTH" value="543"/>
 		<item key="DIALOG_HEIGHT" value="638"/>

@@ -6,15 +6,15 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
        
    	<!-- DI : Constructor injection -->
 	<bean id="mi" class="pack.controller.MyImpl">
-		<constructor-arg>
-			<ref bean="spi"/>
-		</constructor-arg>
+		<property name="myImpl" >
+			<bean class="pack.model.SangpumImpl"></bean>
+		</property>
 	</bean>
 	
-	<bean id="spi" class="pack.model.SangpumImpl"></bean>
 	<!-- 위 구문의 의미
 	SangpumImpl spi = new SangpumImpl();
 	MyImpl mi = new MyImpl(spi);

@@ -78,5 +78,11 @@ public class WDazz6Spr14DbJpaApplication {
 		for (ProductVo p : plist1) {
 			System.out.println(p.getCode() + "\t" + p.getSang() + "\t" + p.getSu() + "\t" + p.getDan());
 		}
+		
+		List<ProductVo> plist2 = pcrt.findAllData2();
+		System.out.println("\n코드\t상품\t수량\t단가"); 
+		for (ProductVo p : plist2) {
+			System.out.println(p.getCode() + "\t" + p.getSang() + "\t" + p.getSu() + "\t" + p.getDan());
+		}
 	}
 }

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>직원 목록</h2>
+	<table border="1">
+		<tr>
+			<th>사번</th>
+			<th>이름</th>
+			<th>성별</th>
+			<th>연봉</th>
+		</tr>
+		<th:block th:if="${list.size > 0}">
+			<tr th:each="l : ${list}">
+				<td th:text="${l.no}"></td>
+				<td th:text="${l.name}"></td>
+				<td th:text="${l.gen}"></td>
+				<td th:text="${l.pay}"></td>
+			</tr>
+		</th:block>
+		<tr>
+			<td colspan="4" th:text="|인원수 : ${list.size}명|"></td>
+		</tr>
+	</table>
+</body>
+</html>
