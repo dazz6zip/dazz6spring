@@ -26,39 +26,60 @@ public class DataProcess {
 		return drt.findById(num).get();
 	}
 	
+	/* 부분 자료 읽기 2 */
+	public MemData getData2(String num) {
+		return drt.findByNum(num);
+	}
+	
 	/* 자료 추가하기 */
-	public void insert(DataBean bean) {
-		MemData md = new MemData();
+	public String insert(DataBean bean) {
 		// num 자동 증가
 //		md.setNum(drt.findByMaxNum());
 		
 		// num 중복 확인
 		try {
-			MemData mem = drt.findById(bean.getNum()).get();
-			System.out.println("이미 등록된 번호입니다. (mem : " + mem + ")");
-//			return "이미 등록된 번호입니다.";
+			MemData md = drt.findById(bean.getNum()).get();
+			System.out.println("md : " + md);
+			return "이미 등록된 번호입니다.";
 		} catch (Exception e) {
 			try {
+				MemData md = new MemData();
 				md.setNum(bean.getNum());
 				md.setName(bean.getName());
 				md.setAddr(bean.getAddr());
 				md = drt.save(md);
+				System.out.println("md : " + md);
+				return "success";
 			} catch (Exception e2) {
-				System.out.println("입력 오류 : " + e2.getMessage());
+				System.out.println("insert 오류 : " + e2.getMessage());
+				return "insert 오류" + e2.getMessage();
 			}
 		}
 	}
 	
-	public void update(DataBean bean) {
-		MemData md = new MemData();
-		md.setNum(bean.getNum());
-		md.setName(bean.getName());
-		md.setAddr(bean.getAddr());
-		drt.save(md);
+	/* 자료 수정하기 */
+	public String update(DataBean bean) {
+		try {
+			MemData md = new MemData();
+			md.setNum(bean.getNum());
+			md.setName(bean.getName());
+			md.setAddr(bean.getAddr());
+			drt.save(md);
+			return "success";
+		} catch (Exception e) {
+			System.out.println("update 오류 : " + e.getMessage());
+			return "오류 : " + e.getMessage();
+		}
 	}
 
 	/* 자료 삭제하기 */
-	public void delete(String num) {
-		drt.deleteById(num);
+	public String delete(String num) {
+		try {
+			drt.deleteById(num);
+			return "success";
+		} catch (Exception e) {
+			System.out.println("delete 오류 : " + e.getMessage());
+			return "오류 : " + e.getMessage();
+		}
 	}
 }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="pack.model.DataMapperInterface">
+	<select id="search" parameterType="pack.model.DataBean" resultType="pack.model.DataDto">
+	SELECT jikwon_no, jikwon_name, jikwon_jik, jikwon_pay, jikwon_rating FROM jikwon WHERE buser_num = (SELECT buser_no FROM buser WHERE buser_name = #{buserName}) AND jikwon_rating = #{selectRating}
+	</select>
+	
+	<select id="searchAll" parameterType="String" resultType="pack.model.DataDto">
+	SELECT jikwon_no, jikwon_name, jikwon_jik, jikwon_pay, jikwon_rating FROM jikwon WHERE buser_num = (SELECT buser_no FROM buser WHERE buser_name = #{buserName})
+	</select>
+
+	<select id="maxPay" parameterType="String" resultType="String">
+	SELECT AVG(jikwon_pay) FROM jikwon WHERE buser_num = (SELECT buser_no FROM buser WHERE buser_name = #{buserName})
+	</select>
+</mapper>

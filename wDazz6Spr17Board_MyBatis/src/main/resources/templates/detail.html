@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>templates/detail.html</title>
+<script type="text/javascript">
+window.onload = () => {
+	document.querySelector("#btnList").onclick = () => {
+		location.href = "list";
+	}
+	
+	document.querySelector("#btnUpdate").onclick = () => {
+		if(confirm("수정하시겠습니까?")) {
+			frm.action = "update";
+			frm.method = "post";
+			frm.submit();
+		}
+	}
+	
+	document.querySelector("#btnDelete").onclick = () => {
+		if(confirm("삭제하시겠습니까?")) {
+			frm.action = "delete";
+			frm.method = "get";
+			frm.submit();
+		}
+	}
+}
+</script>
+</head>
+<body>
+<h2>상세보기</h2>
+<form name="frm" th:object="${board}">
+	글 번호 : [[*{num}]]<br/>
+	<input type="hidden" th:field="*{num}">
+	작성자 : <input type="text" th:field="*{author}"><br/>
+	제목 : <input type="text" th:field="*{title}"><br/>
+	내용 : <textarea rows="5" cols="50" th:field="*{content}"></textarea><br/>
+	작성일 : [[*{bwrite}]]<br/>
+	조회수 : [[*{readcnt}]]<br/>
+	<input type="button" value="목록" id="btnList">
+	<input type="button" value="수정" id="btnUpdate">
+	<input type="button" value="삭제" id="btnDelete">
+</form>
+</body>
+</html>

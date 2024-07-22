@@ -32,9 +32,16 @@ public class DataController {
 	}
 	
 	@PostMapping("insert")
-	public String insert2(DataBean bean) {
-		dao.insert(bean);
-		return "redirect:/list";
+	public String insert2(DataBean bean, Model model) {
+		
+		String msg = dao.insert(bean);
+		
+		if (msg.equals("success")) {
+			return "redirect:/list";
+		} else {
+			model.addAttribute("msg", msg);
+			return "error";
+		}
 	}
 	
 	@GetMapping("update")
@@ -44,14 +51,24 @@ public class DataController {
 	}
 	
 	@PostMapping("update")
-	public String update2(DataBean bean) {
-		dao.update(bean);
-		return "redirect:/list";
+	public String update2(DataBean bean, Model model) {
+		String msg = dao.update(bean);
+		if (msg.equals("success")) {
+			return "redirect:/list";
+		} else {
+			model.addAttribute("msg", msg);
+			return "error";
+		}
 	}
 	
 	@GetMapping("delete")
-	public String delete(@RequestParam("num") String num) {
-		dao.delete(num);
-		return "redirect:/list";
+	public String delete(@RequestParam("num") String num, Model model) {
+		String msg = dao.delete(num);
+		if (msg.equals("success")) {
+			return "redirect:/list";
+		} else {
+			model.addAttribute("msg", msg);
+			return "error";
+		}
 	}
 }
