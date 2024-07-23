@@ -17,7 +17,7 @@ public class UpdateController {
 	
 	@PostMapping("update")
 	public String update(BoardBean bean) {
-		return dao.insertData(bean) ? "redirect:/list" : "error";
+		return dao.updateData(bean) ? "redirect:/list" : "error";
 	}
 
 }

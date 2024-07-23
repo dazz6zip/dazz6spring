@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>결과</h2>
+
+<table border="1">
+	<tr>
+		<th>사번</th>
+		<th>이름</th>
+		<th>직급</th>
+		<th>연봉</th>
+		<th>평가</th>
+	</tr>
+	<tr th:each="l : ${list}">
+		<td th:text="${l.no}"></td>
+		<td th:text="${l.name}"></td>
+		<td th:text="${l.jik}"></td>
+		<td th:text="${l.pay}"></td>
+		<td th:text="${l.rating}"></td>
+	</tr>
+	<tr>
+		<td colspan="5" th:text="|연봉 평균 : ${#aggregates.avg(list.![pay])}원|"></td>
+	</tr>
+</table>
+</body>
+</html>
