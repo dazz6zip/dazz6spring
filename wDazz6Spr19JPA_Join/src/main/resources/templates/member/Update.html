@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>templates/member/update.html</title>
+</head>
+<body>
+<h2>회원 수정 성공</h2>
+<b th:text="${param.name}"></b> 님 정보 수정 성공<br/>
+<a th:href="@{/member/mlist}">회원 목록</a>
+</body>
+</html>

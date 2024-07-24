@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>templates/member/mlist.html</title>
+</head>
+<body>
+<h2>회원 목록</h2>
+<a th:href="@{/member/insertform}">회원 추가</a>
+<table border="1">
+	<tr>
+		<th>번호</th>
+		<th>이름</th>
+		<th>주소</th>
+		<th>수정</th>
+		<th>삭제</th>
+	</tr>
+	<tr th:each = "l : ${list}">
+		<td th:text="${l.num}"></td>
+		<td th:text="${l.name}"></td>
+		<td th:text="${l.addr}"></td>
+		<td><a th:href="@{/member/updateform(num=${l.num})}">수정</a></td>
+		<td><a th:href="@{/member/delete(num=${l.num})}">삭제</a></td>
+	</tr>
+</table>
+<a th:href="@{/employ/list}">직원 목록</a>&emsp;
+<a th:href="@{/}">메인으로</a>
+</body>
+</html>
