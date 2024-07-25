@@ -29,4 +29,5 @@ public interface EmpRepository extends JpaRepository<Emp, Integer> {
 	
 	@Query("SELECT e FROM Emp AS e WHERE e.sal > ?1 AND e.sal < ?2 ORDER BY e.sal ASC")
 	List<Emp> getListBetween2(@Param("sal")int sal);
+	
 }

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>templates/index.html</title>
+</head>
+<body>
+<table>
+	<tr>
+		<th>사번</th>
+		<th>이름</th>
+		<th>직급</th>
+		<th>부서명</th>
+		<th>관리고객<th>
+	</tr>
+	<tr th:each="l : ${list}">
+		<td th:text="${l.no}"></td>
+		<td><a th:href="@{result(no=${l.no})}" th:text="${l.name}"></a></td>
+ 		<td th:text="${l.jik}"></td>
+		<td th:text="${l.bname}"></td>
+		<td></td>
+	</tr>
+</table>
+</body>
+</html>

@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 
+import jakarta.transaction.Transactional;
 import pack.dto.MemberDto;
 import pack.entity.Member;
 import pack.repository.MemberRepository;
@@ -74,9 +75,22 @@ public class MemberServiceImpl implements MemberService {
 		mrps.save(Member.toEntity(dto));
 	}
 
+	@Transactional
 	@Override
 	public void update2(MemberDto dto) {
-		
+		// 수정할 회원의 번호를 이용해서 회원 정보 entity 객체 얻어내기
+	    Member m1 = mrps.findById(dto.getNum()).get();
+	    Member m2 = mrps.findById(dto.getNum()).get();
+	    
+	    // 동일성 검사
+	    boolean isEqual = m1 == m2;
+	    System.out.println("m1 == m2 : " + isEqual);
+	    
+	    // setter 메소드를 이용해서 이름과 주소 수정하기
+	    m1.setName(dto.getName());
+	    m1.setAddr(dto.getAddr());
+	    
+	    // 이 방법을 사용할 경우 @Transactional 어노테이션 필수!
 	}
 
 	@Override

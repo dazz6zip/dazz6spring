@@ -44,7 +44,8 @@ public class MemberController {
 	
 	@PostMapping("/member/update")
 	public String memberUpdatePost(MemberDto dto) {
-		msv.update1(dto);
+//		msv.update1(dto);
+		msv.update2(dto);
 		return "member/update";
 	}
 	

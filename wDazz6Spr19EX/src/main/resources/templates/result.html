@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>templates/result.html</title>
+</head>
+<body>
+<table>
+	<tr>
+		<th>고객번호</th>
+		<th>고객명</th>
+		<th>성별</th>
+		<th>나이</th>
+		<th>전화</th>
+	</tr>
+	<tr th:each="r : ${result}">
+		<td th:text="${r.no}"></td>
+		<td th:text="${r.name}"></td>
+		<td th:text="${r.gen}"></td>
+		<td th:text="${r.nai}"></td>
+		<td th:text="${r.tel}"></td>
+	</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>templates/employee/elist.html</title>
+<style type="text/css">
+td {
+	text-align: center;
+}
+</style>
+</head>
+<body>
+<h2>직원 목록</h2>
+<table border="1">
+	<tr>
+		<th colspan="2">직원</th>
+		<th colspan="2">부서</th>
+	</tr>
+	<tr>
+		<th>번호</th>
+		<th>이름</th>
+		<th>번호</th>
+		<th>이름</th>
+	</tr>
+	<tr th:each="l : ${list}">
+		<td th:text="${l.empno}"></td>
+		<td th:text="${l.ename}"></td>
+		<td th:text="${l.dept.deptno}"></td>
+		<td><a th:text="${l.dept.dname}" th:href="@{/employee/dept(deptno=${l.dept.deptno})}"></a></td>
+	</tr>
+</table>
+</body>
+</html>
