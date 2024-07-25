@@ -15,10 +15,12 @@
 	</tr>
 	<tr th:each="l : ${list}">
 		<td th:text="${l.no}"></td>
-		<td><a th:href="@{result(no=${l.no})}" th:text="${l.name}"></a></td>
+		<td th:if=${l.gCheck}><a th:href="@{result(no=${l.no})}" th:text="${l.name}"></a></td>
+		<td th:unless=${l.gCheck}>[[${l.name}]]</td>
  		<td th:text="${l.jik}"></td>
 		<td th:text="${l.bname}"></td>
-		<td></td>
+		<td th:if=${l.gCheck} th:text="O"></td>
+		<td th:unless=${l.gCheck} th:text="X"></td>
 	</tr>
 </table>
 </body>

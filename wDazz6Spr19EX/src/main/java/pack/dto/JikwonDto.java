@@ -18,20 +18,15 @@ import pack.entity.Jikwon;
 @AllArgsConstructor
 public class JikwonDto {
 	private String no, name, jik, num, bname;
-	private int gcount;
+	private boolean gCheck;
 	private List<GogekDto> glist;
 	
 	public static JikwonDto toDto(Jikwon jikwon) {
-		List<GogekDto> glist = new ArrayList<GogekDto>();
-		for (Gogek g : jikwon.getGlist()) {
-			glist.add(GogekDto.toDto(g));
-		}
-		
 		return JikwonDto.builder()
 				.no(jikwon.getNo())
 				.name(jikwon.getName())
 				.jik(jikwon.getJik())
-				.glist(glist)
+				.gCheck(jikwon.getGlist().size() > 0 ? true : false)
 				.bname(jikwon.getBuser().getName())
 				.build();
 	}

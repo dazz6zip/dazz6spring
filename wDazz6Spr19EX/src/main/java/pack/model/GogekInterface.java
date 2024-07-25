@@ -9,5 +9,5 @@ import pack.entity.Gogek;
 
 public interface GogekInterface extends JpaRepository<Gogek, String> {
 	
-//	public List<Gogek> find();
+	public List<Gogek> findByJikwonNo(String no);
 }

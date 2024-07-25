@@ -18,7 +18,6 @@ public class TestController {
 	@GetMapping("/")
 	public String start(Model model) {
 		model.addAttribute("list", trps.getAll());
-		
 		return "index";
 	}
 	
