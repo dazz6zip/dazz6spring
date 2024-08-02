@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>templates/list.html</title>
+<style type="text/css">
+table {
+	border: 1px solid hotpink;
+	text-align: center;
+	width: 70%
+}
+
+th {
+	background-color: hotpink;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	color: hotpink;
+	border-radius: 10px;
+	padding: 3px;
+	border: 1px solid hotpink;
+}
+</style>
+</head>
+<body>
+	<h2>🍥 회원 목록</h2>
+	<table>
+		<thead>
+			<tr>
+				<th>번호</th>
+				<th>이름</th>
+				<th>주소</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="l : ${list}">
+				<td th:text="${l.num}"></td>
+				<td th:text="${l.name}"></td>
+				<td th:text="${l.addr}"></td>
+			</tr>
+		</tbody>
+	</table><br/>
+	<a th:href="@{/insertForm}">회원 추가</a>
+</body>
+</html>

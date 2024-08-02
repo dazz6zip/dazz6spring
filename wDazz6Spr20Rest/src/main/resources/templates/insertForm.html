@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>templates/insertForm.html</title>
+</head>
+<body>
+<h2>🍥 회원 추가 폼</h2>
+<form th:action="@{/insert}" method="post">
+<label for="name">이름 : </label>
+<input type="text" name="name" id="name"><br/>
+<label for="addr">주소 : </label>
+<input type="text" name="addr" id="addr"><br/>
+<button type="submit">추가</button>
+</form>
+</body>
+</html>
