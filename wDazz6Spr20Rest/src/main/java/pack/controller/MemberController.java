@@ -85,4 +85,5 @@ public class MemberController {
 		dao.delete(num);
 		return Map.of("isSuccess", true);
 	}
+	
 }

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>public/vueRest.html</title>
+<script src="https://unpkg.com/vue@3"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<style type="text/css">
+#infoTable {
+	border: 1px solid tomato;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 8px;
+	color: tomato
+}
+
+th {
+	background-color: tomato;
+	color: greenyellow;
+}
+
+button {
+	border: none;
+	color: greenyellow;
+	background-color: tomato;
+	border-radius: 15px;
+	padding: 5px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+input {
+	padding: 8px;
+	border: 1px solid;
+	color: tomato;
+}
+</style>
+</head>
+<body>
+	<div id="app">
+		<h2>🍅 회원 정보</h2>
+		<table id="infoTable">
+			<thead>
+				<tr>
+					<th>번호</th>
+					<th>주소</th>
+					<th>이름</th>
+					<th>수정/삭제</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr v-for="(m, index) in members" :key="index">
+					<td><b>{{m.num}}</b></td>
+					<td>{{m.name}}</td>
+					<td>{{m.addr}}</td>
+					<td>
+						<button @click="updateMember(m)">수정</button>&nbsp;
+						<button @click="deleteMember(m.num)">삭제</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h2>🍅 회원 추가 또는 수정</h2>
+		<form @submit.prevent="saveMember">
+			<table>
+				<tr>
+					<td><input v-model="memberForm.name" placeholder="이름 입력"
+						required></td>
+					<td rowspan="2">
+						<button type="submit">
+							{{memberForm.num ? "edit" : "add" }}
+						</button>
+					</td>
+				</tr>
+				<tr>
+					<td><input v-model="memberForm.addr" placeholder="주소 입력"
+						required></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+
+	<script type="text/javascript">
+	const { createApp, ref, onMounted } = Vue;
+	createApp({
+		setup() {
+			const members = ref([]);
+
+			// 반응형 데이터로 동작 : Vue Component에서 변경될 때 자동 추적, UI 리렌더링
+			const memberForm = ref({ num: null, name: "", addr: "" });
+			
+			// 자료 읽기 ajax 처리 함수
+			const fetchNumbers = async() => {
+				const response = await axios.get("/members");
+				members.value = response.data;
+			};
+			
+			// 회원 정보 저장 (수정 또는 추가)
+			const saveMember = async() => {
+				if(memberForm.value.num) {
+					// memberForm.value.num 값이 있을 경우 회원 수정
+					await axios.put(`/members/${memberForm.value.num}`, memberForm.value);
+				} else {
+					await axios.post("/members", memberForm.value);
+				}
+				
+				// 저장 후 입력 자료 지우기 (데이터 폼 초기화)
+				memberForm.value = ref({ num: null, name: "", addr: "" });
+				fetchNumbers();
+			};
+			
+			// 회원 삭제
+			const deleteMember = async(num) => {
+				await axios.delete(`/members/${num}`);
+				fetchNumbers();
+			}
+			
+			// 회원 정보 수정
+			const updateMember = (member) => {
+				memberForm.value = {...member};
+			}
+			
+			onMounted(fetchNumbers); // Component가 mount 되면 fetchNumbers 호출
+
+			return { members, memberForm, saveMember, deleteMember, updateMember };
+			
+		},
+	}).mount("#app");
+	</script>
+</body>
+</html>
