@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>public/ajaxtest.html</title>
+<script type="text/javascript"
+	src="https://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#btnSingle").click(function() {
+			$("#showData").empty();
+			$.ajax({
+				type : "get",
+				url : "list",
+				data : {
+					"name" : "james"
+				},
+				dataType : "json",
+				success : function(data) {
+					let str = data.name + "<br/>";
+					str += data.skills[0] + " ";
+					str += data.skills[1];
+					$("#showData").append(str);
+				},
+				error : function(err) {
+					$("#showData").html("<b>ERROR</b>");
+				}
+			})
+		});
+		$("#btnMulti").click(function() {
+			$("#showData").empty();
+			$.ajax({
+				type : "get",
+				url : "list2",
+				data : {
+					"name" : "james"
+				},
+				dataType : "json",
+				success : function(data) {
+					let str = "<table>";
+
+					let list = data.datas;
+					//				alert(list.length);
+
+					$(list).each(function(idx, objArr) {
+						str += "<tr>";
+						str += `<td>${objArr["name"]}</td>`;
+						str += `<td>${objArr.age}</td>`;
+						str += "</tr>";
+					})
+
+					str += "</table>";
+					$("#showData").append(str);
+				},
+				error : function(err) {
+					$("#showData").html("<b>ERROR</b>");
+				}
+			})
+		});
+
+	});
+</script>
+</head>
+<body>
+	<h2>json 읽기</h2>
+	<button id="btnSingle">한 개 읽기</button>
+	<br />
+	<button id="btnMulti">여러 개 읽기</button>
+	<br />
+	<hr />
+	<div id="showData"></div>
+</body>
+</html>
