@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>templates/uploadfile.html</title>
+</head>
+<body>
+<h2>🧸 업로드된 파일 정보</h2>
+[[${filename}]]<br/><br/>
+<a href="index.html">메인</a>
+<br/><br/>
+<form action="download" method="post">
+	<input type="hidden" name="filename" th:value="${filename}">
+	<input type="submit" value="다운로드">
+</form>
+</body>
+</html>
