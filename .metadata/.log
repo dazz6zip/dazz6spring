@@ -53,3 +53,244 @@ java.lang.InterruptedException
 	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
 	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
 	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!SESSION 2024-08-14 14:56:27.272 -----------------------------------------------
+eclipse.buildId=4.32.0.20240606-1231
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2024-08-14 14:56:30.147
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-08-14 14:56:33.384
+!MESSAGE Logback config file: C:\workSpring\springSou\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-08-14 14:56:33.905
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-08-14 14:56:33.905
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-08-14 14:56:34.185
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-08-14 14:56:34.185
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-08-14 14:56:41.239
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\user'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.536
+!MESSAGE Boot project ADDED: spring01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.537
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.540
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.543
+!MESSAGE Boot project ADDED: spring02
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.545
+!MESSAGE Boot project ADDED: spring03di
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.548
+!MESSAGE Boot project ADDED: spring03di_ex
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.551
+!MESSAGE Boot project ADDED: spring04di_setter
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.554
+!MESSAGE Boot project ADDED: spring05di_ex
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.557
+!MESSAGE Boot project ADDED: spring05di_setter
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.559
+!MESSAGE Boot project ADDED: spring06di_arrange
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.562
+!MESSAGE Boot project ADDED: spring07autoAnnotation
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.564
+!MESSAGE Boot project ADDED: spring08bank
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.566
+!MESSAGE Boot project ADDED: spring09AOP
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.569
+!MESSAGE Boot project ADDED: spring10AOP
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-08-14 14:56:41.570
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\workSpring\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre\bin\javaw.exe
+-cp
+C:\workSpring\eclipse\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\classes;C:\workSpring\eclipse\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\workSpring\eclipse\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/workSpring/springSou/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1723615001569
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.571
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.572
+!MESSAGE Boot project ADDED: spring11AOP_annotation
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.575
+!MESSAGE Boot project ADDED: spring12AOP_login
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.578
+!MESSAGE Boot project ADDED: spring13DB_legacy
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.580
+!MESSAGE Boot project ADDED: spring14DB_JDBC_DaoSupport
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-08-14 14:56:41.581
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 19984
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.582
+!MESSAGE Boot project ADDED: spring15DB_JDBC_DaoSupport_annotation
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.586
+!MESSAGE Boot project ADDED: spring16DB_JDBC_DaoSupport_AOP
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.589
+!MESSAGE Boot project ADDED: spring16EX
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.592
+!MESSAGE Boot project ADDED: spring17DB_mybatis
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.595
+!MESSAGE Boot project ADDED: spring18DB_mybatis_annotation
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.598
+!MESSAGE Boot project ADDED: spring18EX
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.601
+!MESSAGE Boot project ADDED: spring19DB_JPA
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.605
+!MESSAGE Boot project ADDED: spring19EX
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.608
+!MESSAGE Boot project ADDED: spring20DB_JPA_JOIN
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.611
+!MESSAGE Boot project ADDED: wDazz6Spr01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.614
+!MESSAGE Boot project ADDED: wDazz6Spr02
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.617
+!MESSAGE Boot project ADDED: wDazz6Spr03
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.621
+!MESSAGE Boot project ADDED: wDazz6Spr04
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.624
+!MESSAGE Boot project ADDED: wDazz6Spr05
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.627
+!MESSAGE Boot project ADDED: wDazz6Spr06Thymeleaf
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.629
+!MESSAGE Boot project ADDED: wDazz6Spr07Thymeleaf
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.630
+!MESSAGE Boot project ADDED: wDazz6Spr08DB_legacy
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.632
+!MESSAGE Boot project ADDED: wDazz6Spr08DB_legacyEX
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.635
+!MESSAGE Boot project ADDED: wDazz6Spr09DB_JdbcDaoSupport
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.636
+!MESSAGE Boot project ADDED: wDazz6Spr10DB_JdbcDaoSupport
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.654
+!MESSAGE Boot project ADDED: wDazz6Spr10DB_JdbcDaoSupportEX
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.656
+!MESSAGE Boot project ADDED: wDazz6Spr11DB_MyBatis
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.657
+!MESSAGE Boot project ADDED: wDazz6Spr11DB_MyBatisEX
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.659
+!MESSAGE Boot project ADDED: wDazz6Spr12DB_MyBatis
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.661
+!MESSAGE Boot project ADDED: wDazz6Spr13DB_JpaBasic
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.663
+!MESSAGE Boot project ADDED: wDazz6Spr14DB_Jpa
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.664
+!MESSAGE Boot project ADDED: wDazz6Spr15DB_JpaEX
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.666
+!MESSAGE Boot project ADDED: wDazz6Spr15DB_JpaSangpum
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.668
+!MESSAGE Boot project ADDED: wDazz6Spr16DB_Jpa
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.670
+!MESSAGE Boot project ADDED: wDazz6Spr17Board_MyBatis
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.672
+!MESSAGE Boot project ADDED: wDazz6Spr17EX
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.673
+!MESSAGE Boot project ADDED: wDazz6Spr18Board_JPA
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.675
+!MESSAGE Boot project ADDED: wDazz6Spr18EX
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.678
+!MESSAGE Boot project ADDED: wDazz6Spr19EX
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.680
+!MESSAGE Boot project ADDED: wDazz6Spr19JPA_Join
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.682
+!MESSAGE Boot project ADDED: wDazz6Spr20Rest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.683
+!MESSAGE Boot project ADDED: wDazz6Spr21Ajax
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.684
+!MESSAGE Boot project ADDED: wDazz6Spr22AjaxDB
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.685
+!MESSAGE Boot project ADDED: wDazz6Spr23FileUpload
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.686
+!MESSAGE Boot project ADDED: wDazz6Spr24DBFileUpload
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-14 14:56:41.687
+!MESSAGE Boot project ADDED: wDazz6SprVueTest
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-08-14 15:23:14.163
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)

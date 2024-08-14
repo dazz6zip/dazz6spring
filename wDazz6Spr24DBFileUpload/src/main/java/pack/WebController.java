@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class WebController {
-	
+
 	@Autowired
 	private FriendService fs;
 
@@ -17,11 +17,12 @@ public class WebController {
 	public String start() {
 		return "start";
 	}
-	
+
 	@GetMapping("/list")
 	public String listGet(Model m) {
 		List<Friend> f = fs.findAll();
 		m.addAttribute("friends", f);
 		return "list";
 	}
+
 }

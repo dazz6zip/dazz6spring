@@ -19432,3 +19432,4 @@ org.eclipse.core.runtime.CoreException: Launch configuration DataImpl references
 2024-08-13 16:41:25,732 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2024-08-13 16:41:25,743 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
 2024-08-13 16:41:25,750 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\workSpring\springSou\wDazz6Spr06Thymeleaf\src\test\resources
+2024-08-14 14:56:40,893 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
