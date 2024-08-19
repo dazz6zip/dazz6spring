@@ -22,24 +22,21 @@ public class UploadController {
 	}
 
 	@PostMapping("/upload")
-	public String handledFileUpload(@RequestParam("bunho") int bunho, 
-									@RequestParam("irum") String irum,
-									@RequestParam("junhwa") String junhwa, 
-									@RequestParam("jikup") String jikup,
-									@RequestParam("file") MultipartFile file,
-									RedirectAttributes rdab) {
-		if(!file.isEmpty() && file.getSize() > 2097152) { // 파일 크기 2MG 제한
+	public String handledFileUpload(@RequestParam("bunho") int bunho, @RequestParam("irum") String irum,
+			@RequestParam("junhwa") String junhwa, @RequestParam("jikup") String jikup,
+			@RequestParam("file") MultipartFile file, RedirectAttributes rdab) {
+		if (!file.isEmpty() && file.getSize() > 2097152) { // 파일 크기 2MG 제한
 			// Flash 속성 추가 메소드. 일회성으로, 주로 리다이렉트 후 사용자에게 메시지를 전달할 때 사용
 			rdab.addFlashAttribute("message", "파일 크기가 초과되었습니다.");
 			return "redirect:/insert";
 		}
-		
-		if(!file.getContentType().startsWith("image/")) {
+
+		if (!file.getContentType().startsWith("image/")) {
 			// 입력된 파일이 이미지인지 확인
 			rdab.addFlashAttribute("message", "이미지 파일을 등록해 주세요.");
 			return "redirect:/insert";
 		}
-		
+
 		try {
 			Friend f = new Friend();
 			f.setBunho(bunho);
@@ -49,14 +46,16 @@ public class UploadController {
 			System.out.println(file.getBytes());
 			f.setSajin(file.getBytes());
 			f.setImagetype(file.getContentType());
-			
+
 			fs.saveFriend(f);
 		} catch (Exception e) {
 			rdab.addFlashAttribute("message", "파일 저장 중 오류가 발생 : " + e);
 			return "redirect:/insert";
 		}
-		
-		
+
 		return "redirect:/list";
 	}
+	
+	
+	
 }

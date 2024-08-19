@@ -24,5 +24,10 @@ public class WebController {
 		m.addAttribute("friends", f);
 		return "list";
 	}
+	
+	@GetMapping("/login")
+	public String showLoginPage() {
+		return "/login";
+	}
 
 }
