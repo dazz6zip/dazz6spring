@@ -77,6 +77,7 @@ public class MyController {
 
 		return "gugu";
 	}
+	
 
 	@PostMapping("gugu")
 	public String gugu(@RequestParam(name = "num") int num, HttpServletRequest request, Model model) {

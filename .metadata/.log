@@ -2258,3 +2258,808 @@ Java Model Exception: Error in Java Model (code 969): logout(HttpSession) [in My
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-26 12:59:12.194
 !MESSAGE Classpath changed for project: wDazz6Spr26FormerSecurityJwt
+!SESSION 2024-08-27 09:31:40.662 -----------------------------------------------
+eclipse.buildId=4.32.0.20240606-1231
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2024-08-27 09:31:44.233
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-08-27 09:31:47.288
+!MESSAGE Logback config file: C:\workSpring\springSou\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-08-27 09:31:47.708
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-08-27 09:31:47.708
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-08-27 09:31:47.959
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-08-27 09:31:47.959
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-08-27 09:31:54.241
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\workSpring\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre\bin\javaw.exe
+-cp
+C:\workSpring\eclipse\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\classes;C:\workSpring\eclipse\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\workSpring\eclipse\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/workSpring/springSou/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1724718714240
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:54.242
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-08-27 09:31:54.256
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 11680
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-08-27 09:31:55.803
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\user'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.019
+!MESSAGE Boot project ADDED: spring01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.019
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.022
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.025
+!MESSAGE Boot project ADDED: spring02
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.028
+!MESSAGE Boot project ADDED: spring03di
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.032
+!MESSAGE Boot project ADDED: spring03di_ex
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.035
+!MESSAGE Boot project ADDED: spring04di_setter
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.039
+!MESSAGE Boot project ADDED: spring05di_ex
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.042
+!MESSAGE Boot project ADDED: spring05di_setter
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.046
+!MESSAGE Boot project ADDED: spring06di_arrange
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.047
+!MESSAGE Boot project ADDED: spring07autoAnnotation
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.051
+!MESSAGE Boot project ADDED: spring08bank
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.054
+!MESSAGE Boot project ADDED: spring09AOP
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.057
+!MESSAGE Boot project ADDED: spring10AOP
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.061
+!MESSAGE Boot project ADDED: spring11AOP_annotation
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.064
+!MESSAGE Boot project ADDED: spring12AOP_login
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.068
+!MESSAGE Boot project ADDED: spring13DB_legacy
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.071
+!MESSAGE Boot project ADDED: spring14DB_JDBC_DaoSupport
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.075
+!MESSAGE Boot project ADDED: spring15DB_JDBC_DaoSupport_annotation
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.078
+!MESSAGE Boot project ADDED: spring16DB_JDBC_DaoSupport_AOP
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.081
+!MESSAGE Boot project ADDED: spring16EX
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.084
+!MESSAGE Boot project ADDED: spring17DB_mybatis
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.088
+!MESSAGE Boot project ADDED: spring18DB_mybatis_annotation
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.091
+!MESSAGE Boot project ADDED: spring18EX
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.094
+!MESSAGE Boot project ADDED: spring19DB_JPA
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.097
+!MESSAGE Boot project ADDED: spring19EX
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.100
+!MESSAGE Boot project ADDED: spring20DB_JPA_JOIN
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.101
+!MESSAGE Boot project ADDED: sprweb12board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.105
+!MESSAGE Boot project ADDED: wDazz6Spr01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.109
+!MESSAGE Boot project ADDED: wDazz6Spr02
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.112
+!MESSAGE Boot project ADDED: wDazz6Spr03
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.115
+!MESSAGE Boot project ADDED: wDazz6Spr04
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.119
+!MESSAGE Boot project ADDED: wDazz6Spr05
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.124
+!MESSAGE Boot project ADDED: wDazz6Spr06Thymeleaf
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.126
+!MESSAGE Boot project ADDED: wDazz6Spr07Thymeleaf
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.128
+!MESSAGE Boot project ADDED: wDazz6Spr08DB_legacy
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.130
+!MESSAGE Boot project ADDED: wDazz6Spr08DB_legacyEX
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.133
+!MESSAGE Boot project ADDED: wDazz6Spr09DB_JdbcDaoSupport
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.135
+!MESSAGE Boot project ADDED: wDazz6Spr10DB_JdbcDaoSupport
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.138
+!MESSAGE Boot project ADDED: wDazz6Spr10DB_JdbcDaoSupportEX
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.140
+!MESSAGE Boot project ADDED: wDazz6Spr11DB_MyBatis
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.142
+!MESSAGE Boot project ADDED: wDazz6Spr11DB_MyBatisEX
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.144
+!MESSAGE Boot project ADDED: wDazz6Spr12DB_MyBatis
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.146
+!MESSAGE Boot project ADDED: wDazz6Spr13DB_JpaBasic
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.148
+!MESSAGE Boot project ADDED: wDazz6Spr14DB_Jpa
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.151
+!MESSAGE Boot project ADDED: wDazz6Spr15DB_JpaEX
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.153
+!MESSAGE Boot project ADDED: wDazz6Spr15DB_JpaSangpum
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.156
+!MESSAGE Boot project ADDED: wDazz6Spr16DB_Jpa
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.158
+!MESSAGE Boot project ADDED: wDazz6Spr17Board_MyBatis
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.160
+!MESSAGE Boot project ADDED: wDazz6Spr17EX
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.162
+!MESSAGE Boot project ADDED: wDazz6Spr18Board_JPA
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.165
+!MESSAGE Boot project ADDED: wDazz6Spr18EX
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.167
+!MESSAGE Boot project ADDED: wDazz6Spr19EX
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.170
+!MESSAGE Boot project ADDED: wDazz6Spr19JPA_Join
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.172
+!MESSAGE Boot project ADDED: wDazz6Spr20Rest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.174
+!MESSAGE Boot project ADDED: wDazz6Spr21Ajax
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.176
+!MESSAGE Boot project ADDED: wDazz6Spr22AjaxDB
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.178
+!MESSAGE Boot project ADDED: wDazz6Spr23FileUpload
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.182
+!MESSAGE Boot project ADDED: wDazz6Spr24DBFileUpload
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.183
+!MESSAGE Boot project ADDED: wDazz6Spr25FormerSecurity
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.185
+!MESSAGE Boot project ADDED: wDazz6Spr26FormerSecurityJwt
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:56.186
+!MESSAGE Boot project ADDED: wDazz6SprVueTest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 09:31:58.291
+!MESSAGE Classpath changed for project: wDazz6Spr19JPA_Join
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:15.130
+!MESSAGE The artifact aspectj:aspectjweaver:jar:1.5.4 has been relocated to org.aspectj:aspectjweaver:jar:1.5.4
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:15.172
+!MESSAGE The artifact aspectj:aspectjweaver:jar:1.5.4 has been relocated to org.aspectj:aspectjweaver:jar:1.5.4
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:15.211
+!MESSAGE The artifact aspectj:aspectjweaver:jar:1.5.4 has been relocated to org.aspectj:aspectjweaver:jar:1.5.4
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:15.248
+!MESSAGE The artifact aspectj:aspectjweaver:jar:1.5.4 has been relocated to org.aspectj:aspectjweaver:jar:1.5.4
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:15.551
+!MESSAGE The artifact aspectj:aspectjweaver:jar:1.5.4 has been relocated to org.aspectj:aspectjweaver:jar:1.5.4
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:15.616
+!MESSAGE The artifact aspectj:aspectjweaver:jar:1.5.4 has been relocated to org.aspectj:aspectjweaver:jar:1.5.4
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:15.693
+!MESSAGE The artifact aspectj:aspectjweaver:jar:1.5.4 has been relocated to org.aspectj:aspectjweaver:jar:1.5.4
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:15.764
+!MESSAGE The artifact aspectj:aspectjweaver:jar:1.5.4 has been relocated to org.aspectj:aspectjweaver:jar:1.5.4
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:15.845
+!MESSAGE The artifact aspectj:aspectjweaver:jar:1.5.4 has been relocated to org.aspectj:aspectjweaver:jar:1.5.4
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:15.984
+!MESSAGE The artifact aspectj:aspectjweaver:jar:1.5.4 has been relocated to org.aspectj:aspectjweaver:jar:1.5.4
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:16.069
+!MESSAGE The artifact aspectj:aspectjweaver:jar:1.5.4 has been relocated to org.aspectj:aspectjweaver:jar:1.5.4
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:16.159
+!MESSAGE The artifact aspectj:aspectjweaver:jar:1.5.4 has been relocated to org.aspectj:aspectjweaver:jar:1.5.4
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:16.756
+!MESSAGE The artifact aspectj:aspectjweaver:jar:1.5.4 has been relocated to org.aspectj:aspectjweaver:jar:1.5.4
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:16.860
+!MESSAGE The artifact aspectj:aspectjweaver:jar:1.5.4 has been relocated to org.aspectj:aspectjweaver:jar:1.5.4
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:16.965
+!MESSAGE The artifact aspectj:aspectjweaver:jar:1.5.4 has been relocated to org.aspectj:aspectjweaver:jar:1.5.4
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:23.827
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:23.840
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:25.034
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:25.038
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:25.099
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:25.103
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:25.145
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:25.150
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2024-08-27 09:39:25.174
+!MESSAGE Class com.google.javascript.jscomp.parsing.parser.Parser$Config$Mode does not have member field 'com.google.javascript.jscomp.parsing.parser.Parser$Config$Mode ES6'
+!STACK 0
+java.lang.NoSuchFieldError: Class com.google.javascript.jscomp.parsing.parser.Parser$Config$Mode does not have member field 'com.google.javascript.jscomp.parsing.parser.Parser$Config$Mode ES6'
+	at org.eclipse.wst.jsdt.internal.compiler.closure.ClosureCompiler.parse(ClosureCompiler.java:112)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:911)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:675)
+	at org.eclipse.wst.jsdt.internal.core.validation.JavaScriptValidator.validate(JavaScriptValidator.java:63)
+	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1178)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
+	at org.eclipse.wst.validation.internal.ValManager$1.visit(ValManager.java:665)
+	at org.eclipse.wst.validation.internal.ValManager.accept(ValManager.java:810)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:669)
+	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:299)
+	at org.eclipse.core.internal.resources.Resource.lambda$1(Resource.java:154)
+	at org.eclipse.core.internal.resources.Resource.lambda$0(Resource.java:122)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:85)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:90)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:90)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:90)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:90)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:90)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:90)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:135)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:131)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:92)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:154)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:142)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.fullBuild(ValBuilderJob.java:219)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:178)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2024-08-27 09:39:25.176
+!MESSAGE AST couldn't be created during the validation of 453.7afe46dc.chunk.js
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2024-08-27 09:39:25.182
+!MESSAGE Class com.google.javascript.jscomp.parsing.parser.Parser$Config$Mode does not have member field 'com.google.javascript.jscomp.parsing.parser.Parser$Config$Mode ES6'
+!STACK 0
+java.lang.NoSuchFieldError: Class com.google.javascript.jscomp.parsing.parser.Parser$Config$Mode does not have member field 'com.google.javascript.jscomp.parsing.parser.Parser$Config$Mode ES6'
+	at org.eclipse.wst.jsdt.internal.compiler.closure.ClosureCompiler.parse(ClosureCompiler.java:112)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:911)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:675)
+	at org.eclipse.wst.jsdt.internal.core.validation.JavaScriptValidator.validate(JavaScriptValidator.java:63)
+	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1178)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
+	at org.eclipse.wst.validation.internal.ValManager$1.visit(ValManager.java:665)
+	at org.eclipse.wst.validation.internal.ValManager.accept(ValManager.java:810)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:669)
+	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:299)
+	at org.eclipse.core.internal.resources.Resource.lambda$1(Resource.java:154)
+	at org.eclipse.core.internal.resources.Resource.lambda$0(Resource.java:122)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:85)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:90)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:90)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:90)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:90)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:90)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:90)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:135)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:131)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:92)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:154)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:142)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.fullBuild(ValBuilderJob.java:219)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:178)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2024-08-27 09:39:25.182
+!MESSAGE AST couldn't be created during the validation of main.fd2e6b28.js
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:25.186
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:25.190
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:25.237
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:25.243
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:25.281
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:25.287
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:25.339
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:25.344
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:25.518
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:25.526
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:25.586
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:25.591
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:25.644
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:25.649
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:25.687
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:25.694
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:25.738
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:25.745
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:25.786
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:25.792
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:26.332
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:26.335
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:26.385
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:26.389
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:26.442
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:26.445
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:26.526
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:26.531
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:26.611
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:26.620
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:26.876
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:26.882
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:26.962
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:26.967
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:27.075
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:27.081
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:27.623
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:27.629
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:27.667
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:27.674
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:27.713
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-08-27 09:39:27.718
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 10:09:11.471
+!MESSAGE Classpath changed for project: wDazz6Spr27Security
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 10:09:11.472
+!MESSAGE Boot project ADDED: wDazz6Spr27Security
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-08-27 11:11:26.620
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-08-27 11:15:03.283
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-08-27 11:15:05.576
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-08-27 11:15:26.372
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!SESSION 2024-08-27 11:18:38.560 -----------------------------------------------
+eclipse.buildId=4.32.0.20240606-1231
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data file:/C:/workSpring/springSou/
+
+!ENTRY ch.qos.logback.classic 1 0 2024-08-27 11:18:41.519
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-08-27 11:18:54.595
+!MESSAGE Logback config file: C:\workSpring\springSou\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-08-27 11:18:55.111
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-08-27 11:18:55.111
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-08-27 11:18:55.389
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-08-27 11:18:55.389
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-08-27 11:19:01.960
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\user'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.240
+!MESSAGE Boot project ADDED: spring01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.242
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.244
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.247
+!MESSAGE Boot project ADDED: spring02
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.250
+!MESSAGE Boot project ADDED: spring03di
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.253
+!MESSAGE Boot project ADDED: spring03di_ex
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.256
+!MESSAGE Boot project ADDED: spring04di_setter
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.259
+!MESSAGE Boot project ADDED: spring05di_ex
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.261
+!MESSAGE Boot project ADDED: spring05di_setter
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.264
+!MESSAGE Boot project ADDED: spring06di_arrange
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.267
+!MESSAGE Boot project ADDED: spring07autoAnnotation
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.270
+!MESSAGE Boot project ADDED: spring08bank
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.274
+!MESSAGE Boot project ADDED: spring09AOP
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-08-27 11:19:02.275
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\workSpring\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre\bin\javaw.exe
+-cp
+C:\workSpring\eclipse\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\classes;C:\workSpring\eclipse\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\workSpring\eclipse\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/workSpring/springSou/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1724725142274
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.276
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.278
+!MESSAGE Boot project ADDED: spring10AOP
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.282
+!MESSAGE Boot project ADDED: spring11AOP_annotation
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-08-27 11:19:02.283
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 10880
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.286
+!MESSAGE Boot project ADDED: spring12AOP_login
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.290
+!MESSAGE Boot project ADDED: spring13DB_legacy
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.296
+!MESSAGE Boot project ADDED: spring14DB_JDBC_DaoSupport
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.299
+!MESSAGE Boot project ADDED: spring15DB_JDBC_DaoSupport_annotation
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.303
+!MESSAGE Boot project ADDED: spring16DB_JDBC_DaoSupport_AOP
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.306
+!MESSAGE Boot project ADDED: spring16EX
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.309
+!MESSAGE Boot project ADDED: spring17DB_mybatis
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.312
+!MESSAGE Boot project ADDED: spring18DB_mybatis_annotation
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.315
+!MESSAGE Boot project ADDED: spring18EX
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.318
+!MESSAGE Boot project ADDED: spring19DB_JPA
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.322
+!MESSAGE Boot project ADDED: spring19EX
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.325
+!MESSAGE Boot project ADDED: spring20DB_JPA_JOIN
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.327
+!MESSAGE Boot project ADDED: sprweb12board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.330
+!MESSAGE Boot project ADDED: wDazz6Spr01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.334
+!MESSAGE Boot project ADDED: wDazz6Spr02
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.338
+!MESSAGE Boot project ADDED: wDazz6Spr03
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.342
+!MESSAGE Boot project ADDED: wDazz6Spr04
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.345
+!MESSAGE Boot project ADDED: wDazz6Spr05
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.348
+!MESSAGE Boot project ADDED: wDazz6Spr06Thymeleaf
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.349
+!MESSAGE Boot project ADDED: wDazz6Spr07Thymeleaf
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.351
+!MESSAGE Boot project ADDED: wDazz6Spr08DB_legacy
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.353
+!MESSAGE Boot project ADDED: wDazz6Spr08DB_legacyEX
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.355
+!MESSAGE Boot project ADDED: wDazz6Spr09DB_JdbcDaoSupport
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.356
+!MESSAGE Boot project ADDED: wDazz6Spr10DB_JdbcDaoSupport
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.362
+!MESSAGE Boot project ADDED: wDazz6Spr10DB_JdbcDaoSupportEX
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.364
+!MESSAGE Boot project ADDED: wDazz6Spr11DB_MyBatis
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.365
+!MESSAGE Boot project ADDED: wDazz6Spr11DB_MyBatisEX
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.367
+!MESSAGE Boot project ADDED: wDazz6Spr12DB_MyBatis
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.368
+!MESSAGE Boot project ADDED: wDazz6Spr13DB_JpaBasic
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.370
+!MESSAGE Boot project ADDED: wDazz6Spr14DB_Jpa
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.372
+!MESSAGE Boot project ADDED: wDazz6Spr15DB_JpaEX
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.374
+!MESSAGE Boot project ADDED: wDazz6Spr15DB_JpaSangpum
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.376
+!MESSAGE Boot project ADDED: wDazz6Spr16DB_Jpa
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.378
+!MESSAGE Boot project ADDED: wDazz6Spr17Board_MyBatis
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.380
+!MESSAGE Boot project ADDED: wDazz6Spr17EX
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.381
+!MESSAGE Boot project ADDED: wDazz6Spr18Board_JPA
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.383
+!MESSAGE Boot project ADDED: wDazz6Spr18EX
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.384
+!MESSAGE Boot project ADDED: wDazz6Spr19EX
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.387
+!MESSAGE Boot project ADDED: wDazz6Spr19JPA_Join
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.388
+!MESSAGE Boot project ADDED: wDazz6Spr20Rest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.390
+!MESSAGE Boot project ADDED: wDazz6Spr21Ajax
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.392
+!MESSAGE Boot project ADDED: wDazz6Spr22AjaxDB
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.394
+!MESSAGE Boot project ADDED: wDazz6Spr23FileUpload
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.396
+!MESSAGE Boot project ADDED: wDazz6Spr24DBFileUpload
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.398
+!MESSAGE Boot project ADDED: wDazz6Spr25FormerSecurity
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.400
+!MESSAGE Boot project ADDED: wDazz6Spr26FormerSecurityJwt
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.402
+!MESSAGE Boot project ADDED: wDazz6Spr27Security
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-08-27 11:19:02.403
+!MESSAGE Boot project ADDED: wDazz6SprVueTest
