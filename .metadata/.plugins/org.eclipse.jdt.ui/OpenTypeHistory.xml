@@ -9,4 +9,5 @@
     <typeInfo handle="=spring17DB_mybatis/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;pack.business{BusinessInter.java[BusinessInter" modifiers="513" timestamp="1720490909715"/>
     <typeInfo handle="=spring19DB_JPA/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;pack.model{DataInterface.java[DataInterface" modifiers="513" timestamp="1720578013466"/>
     <typeInfo handle="=spring19DB_JPA/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;pack.business{BusinessInter.java[BusinessInter" modifiers="513" timestamp="1720512245047"/>
+    <typeInfo handle="=wDazz6Spr28SecurityDB/C:\/Users\/user\/.gradle\/caches\/modules-2\/files-2.1\/org.springframework.data\/spring-data-jpa\/3.3.3\/9b89dbd19eee24c4dc4df12564efc603c614aa91\/spring-data-jpa-3.3.3.jar=/gradle_used_by_scope=/main,test=/&lt;org.springframework.data.jpa.repository(JpaRepository.class[JpaRepository" modifiers="1537" timestamp="1724806147310"/>
 </typeInfoHistroy>

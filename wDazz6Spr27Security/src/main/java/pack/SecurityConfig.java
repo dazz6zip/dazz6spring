@@ -65,7 +65,6 @@ public class SecurityConfig { // 기본적인 웹 보안 구성을 설정
 		return new BCryptPasswordEncoder(); 			// 비밀번호 암호화를 위해 BCrypt 알고리즘 사용
 														// 단방향 해시함수를 이용하여 암호화 수행
 	}
-	
 
 
 
