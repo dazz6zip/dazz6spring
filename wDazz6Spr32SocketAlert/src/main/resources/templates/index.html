@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.com">
+<head>
+<meta charset="UTF-8">
+<title>static/index.html</title>
+<style>
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	color: #333;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+	color: #007bff;
+	margin-top: 20px;
+}
+
+h3 {
+	text-align: center;
+	color: #007bff;
+	margin-top: 20px;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+	width: calc(100% - 22px);
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+button {
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+	margin-right: 10px;
+	transition: background-color 0.3s ease;
+}
+
+button:hover {
+	background-color: #0056b3;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+li {
+	background-color: #f8f9fa;
+	margin: 5px 0;
+	padding: 10px;
+	border-radius: 4px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.notification-container {
+	margin-top: 20px;
+}
+</style>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.5.1/sockjs.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script type="text/javascript">
+	let stompClient = null;
+
+	function connect() {
+		let socket = new SockJS('/ws')
+
+		stompClient = Stomp.over(socket);
+
+		stompClient.connect({}, function(frame) {
+			console.log('connected : ' + frame);
+
+			stompClient.subscribe('/topic/notifications', function(noti) {
+				let parseNoti = JSON.parse(noti.body);
+
+				showNotiFunc(parseNoti.type, parseNoti.message);
+			});
+		})
+
+	}
+	function sendRequest() {
+		let fromUser = document.querySelector("#fromUser").value;
+
+		if (fromUser.trim() === "") {
+			alert("사용자 이름을 입력하세요.");
+			return;
+		}
+
+		stompClient.send("/app/friend-request", {}, fromUser);
+	}
+	
+	function sendComment() {
+		let fromUser = document.querySelector("#fromUser").value;
+
+		if (fromUser.trim() === "") {
+			alert("사용자 이름을 입력하세요.");
+			return;
+		}
+
+		stompClient.send("/app/comment", {}, fromUser);
+	}
+	
+	function sendLike() {
+		let fromUser = document.querySelector("#fromUser").value;
+
+		if (fromUser.trim() === "") {
+			alert("사용자 이름을 입력하세요.");
+			return;
+		}
+
+		stompClient.send("/app/like", {}, fromUser);
+	}
+	
+	function showNotiFunc(type, message) {
+		let notiList = document.querySelector("#notiShow");
+		let li = document.createElement("li");
+
+		li.appendChild(document.createTextNode(`${message}`));
+
+		notiShow.appendChild(li);
+	}
+
+	window.onload = connect;
+</script>
+</head>
+<body>
+	<div class="container">
+		<h2>🎐 실시간 알림</h2>
+		<div>
+			<input type="text" id="fromUser" placeholder="이름 입력">
+		</div>
+		<br />
+		<div>
+			<button onclick="sendRequest()">친구 요청</button>
+			<button onclick="sendComment()">댓글 알림</button>
+			<button onclick="sendLike()">좋아요 알림</button>
+		</div>
+		<br />
+		<div class="notification-container">
+			<h3>알림</h3>
+			<ul id="notiShow"></ul>
+		</div>
+	</div>
+</body>
+</html>

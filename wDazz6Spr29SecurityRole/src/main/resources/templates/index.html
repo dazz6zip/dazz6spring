@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>templates/index.html</title>
+<style>
+
+li a {
+text-decoration: none;
+color: black;
+}
+
+li a:hover {
+	font-weight: bold; 
+	color: tomato;
+}
+
+
+</style>
+</head>
+<body>
+<h2>🏡 HOMEPAGE</h2>
+	<div sec:authorize="isAuthenticated()">
+		<strong sec:authentication="name"></strong> 님 로그인 중...
+		<a th:href="@{/user/logout}">로그아웃</a>
+	</div>
+	
+	<div sec:authorize="!isAuthenticated()">
+		로그인 정보 없음
+		<a th:href="@{/user/loginform}">로그인</a>
+	</div>
+	
+	<ul>
+		<li><a th:href="@{/notice}">/notice (login X)</a></li>
+		<li><a th:href="@{/play}">/play (login all)</a></li>
+		<li><a th:href="@{/shop}">/shop (login part)</a></li>
+		<li><a th:href="@{/staff/user/list}">/staff/user/list (staff, admin only)</a></li>
+		<li><a th:href="@{/admin/user/manage}">/admin/user/manage (admin only)</a></li>
+	</ul>
+</body>
+</html>

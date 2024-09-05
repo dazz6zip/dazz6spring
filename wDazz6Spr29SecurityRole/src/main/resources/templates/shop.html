@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>template.user/shop.html</title>
+</head>
+<body>
+<h2>쇼핑몰 페이지</h2>
+<form th:action="@{/shop/buy}">
+<input type="hidden" name="goodscode" value="123">
+<select name="amount">
+	<option>1</option>
+	<option>2</option>
+	<option>3</option>
+</select>개
+<button type="submit">구매</button>
+</form>
+</body>
+</html>

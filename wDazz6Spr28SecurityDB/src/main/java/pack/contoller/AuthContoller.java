@@ -23,10 +23,7 @@ public class AuthContoller {
 		this.athMng = athMng;
 	}
 
-	@GetMapping("/")
-	public String sijak() {
-		return "redirect:/login";
-	}
+	
 
 	@GetMapping("/login")
 	public String login() {

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>template.user/play.html</title>
+</head>
+<body>
+<h2>놀이터 페이지</h2>
+<p sec:authentication="name"></p>
+어쩌구 저쩌구..<br/>
+<a th:href="@{/}">인덱스로 이동</a>
+</body>
+</html>

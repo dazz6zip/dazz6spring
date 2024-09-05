@@ -32,7 +32,7 @@ public class SecurityConfig {
 					-> auth
 					
 						/* requestMatchers 안에 있는 경로들은 모두 접근 가능 */
-						.requestMatchers("/auth/login", "/auth/logout", "/auth/gugu", "/static/**")
+						.requestMatchers("/auth/login", "/auth/logout", "/static/**")
 						.permitAll()
 						
 						/* requestMatchers 에 지정되지 않은 경로들은 인증 필요 */
